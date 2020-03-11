@@ -21,7 +21,7 @@ feature 'Testing site venus.com' do
 
     find(:xpath, ta('venus:productPage:tankiniTop', "(//h2[text()='tankini top'])[1]")).click
 
-    page.execute_script "window.scrollTo(0,500)" # landing page
+    page.execute_script "window.scrollTo(0,500)" # lazy loading
 
     find(:xpath, ta('venus:viewProductPage:size10', "//span[text()='10']")).click
     find(:xpath, ta('venus:viewProductPage:qtyDropDown', "//div[text()='1' and @role]")).click

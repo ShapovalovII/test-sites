@@ -16,10 +16,10 @@ feature 'Testing site shopplanetblue.com' do
     find(:xpath, ta('shopplanetblue:homePage:clothingTopsBasicsMenu', "//div[./div[text()='Basics']]")).click
 
     find(:xpath, ta('shopplanetblue:basic_teesPage:seabraTopNew', "//a[contains(., 'SEABRA TOP | New')]")).click
-    page.execute_script "window.scrollTo(0,200)" # landing page
+    page.execute_script "window.scrollTo(0,200)" # lazy loading
 
     find(:xpath, ta('shopplanetblue:productPage:thirdPicture', "//button[@aria-label='dot-button-2']")).click
-    page.execute_script "window.scrollTo(0,800)" # landing page
+    page.execute_script "window.scrollTo(0,800)" # lazy loading
 
     find(:xpath, ta('shopplanetblue:productPage:colorIvory', "//button[@aria-label='IVORY']")).click
     find(:xpath, ta('shopplanetblue:productPage:sizeGuide', "//a[contains(., 'Size Guide')]")).click

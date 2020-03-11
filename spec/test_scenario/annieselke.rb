@@ -8,12 +8,6 @@ feature 'Testing site annieselke.com' do
 
     find(:xpath, ta('annieselke:loginPage:createNewAccount', "//h3[text()='Create an Account']")).click
 
-    # if expect(page).to have_xpath("//iframe[contains(@title, 'Sign up')]", wait: 20)
-    #   within_frame(find(:xpath, ta('annieselke:loginPage:frameAd', "//iframe[contains(@title, 'Sign up')]"))) do
-    #     find(:xpath, ta('annieselke:loginPage:closeAd', "//span[text()='X']")).click
-    #   end
-    # end
-
     select ta("annieselke:loginPage:titleDropDown", "Mr"), :from => "register.title"
 
     find(:xpath, ta('annieselke:loginPage:firstNameFld', "//input[@id='register.firstName']")).set("Igor")

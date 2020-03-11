@@ -1,0 +1,7 @@
+.idea
+log
+vendor
+Gemfile.lock
+mkmf.log
+test-sites.iml
+trueautomation.json
